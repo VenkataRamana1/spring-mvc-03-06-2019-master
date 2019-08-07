@@ -32,7 +32,12 @@
 			</div>
 		</div>
 		<!-- left column -->
+		<a class="btn btn-info btn-flat margin"
+			href="/spring-mvc-zero-xml/requirements" style="float: right;"> <i
+			class="fa fa-backward" aria-hidden="true"></i> Back to List
+		</a>
 		<div class="col-md-6" style="padding-top: 50px;">
+
 			<!-- general form elements -->
 			<div class="box box-warning">
 				<div class="box-header with-border">
@@ -123,7 +128,9 @@
 									class="form-control" />
 							</div> --%>
 					</div>
+
 					<div style="float: right;">
+
 						<input type="submit" class="btn bg-orange btn-flat margin"
 							value="Add Requirement" />
 					</div>
