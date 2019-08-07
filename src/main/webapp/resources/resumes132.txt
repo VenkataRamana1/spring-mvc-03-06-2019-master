@@ -1,0 +1,75 @@
+DECLARE   
+   total_rows number(2);  
+BEGIN  
+   UPDATE  emp
+   SET sal = sal + 5000;  
+   IF sql%notfound THEN  
+      dbms_output.put_line('no emploee updated');  
+   ELSIF sql%found THEN  
+      total_rows := sql%rowcount;  
+      dbms_output.put_line( total_rows || ' emploee updated ');  
+   END IF;   
+END;  
+/  
+
+ Declare
+ Cursor c1 is select Ename from EMP;
+ lv_Ename emp.ename%type;
+ Begin
+ Open c1;
+ Loop
+ Fetch c1 into lv_ename;
+ if c1%found
+ Then
+ DBMS_OUTPUT.PUT_LINE('Employee Fetched:' ||  lv_Ename);
+ else
+ exit;
+ end if;
+
+ end loop;
+ Dbms_output.put_line(‘Total Rows Fetched is ‘||c1%rowcount);
+ close c1;
+ end;
+ /
+
+ DECLARE
+ cursor c1 is select * from emp;
+ temp emp%rowtype;
+ begin
+ open c1;
+loop
+fetch c1 into temp; 
+if c1%found
+then 
+DBMS_OUTPUT.PUT_LINE('Emp_no:' || temp.empno);
+else
+exit;
+end if;
+end loop; 
+DBMS_OUTPUT.PUT_LINE('Emp_no:' || c1%rowcount);
+close c1;
+ end;
+ /
+
+declare 
+cursor c(no number) is select * from emp where empno=no;
+temp emp%rowtype;
+begin
+open c(7782);
+FOR temp IN c(7782) LOOP
+DBMS_OUTPUT.PUT_LINE('Emp_no:' || temp.empno);
+DBMS_OUTPUT.PUT_LINE('Emp_no:' || temp.ename);
+end loop;
+close c;
+end;
+/
+
+
+ 
+
+
+
+                                               
+
+                                               
+ 
