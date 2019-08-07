@@ -56,11 +56,10 @@
 				<div class="box box-warning">
 					<div class="box-header with-border">
 						<h3 class="box-title">Edit Category</h3>
-						<span>
-							<a class="btn btn-info btn-flat margin"
-								href="/spring-mvc-zero-xml/requirements"  style="float: right;"> <i
-								class="fa fa-backward" aria-hidden="true"></i> Back to List
-							</a>
+						<span> <a class="btn btn-info btn-flat margin"
+							href="/spring-mvc-zero-xml/requirements" style="float: right;">
+								<i class="fa fa-backward" aria-hidden="true"></i> Back to List
+						</a>
 						</span>
 					</div>
 					<!-- /.box-header -->
@@ -80,50 +79,57 @@
 									<label>Category</label> <input type="text" class="form-control"
 										name="categoryId" value="${requirement.categoryId}"
 										id="categoryId" disabled="disabled">
-
 								</div>
 							</div>
-							<div class="form-group col-md-6">
-								<label>Experience</label> <input type="text"
-									class="form-control" name="experiencelevel"
-									value="${requirement.experiencelevel}" id="experiencelevel"
-									placeholder="Employee Id" required="required">
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label>Experience</label> <input type="text"
+										class="form-control" name="experiencelevel"
+										value="${requirement.experiencelevel}" id="experiencelevel"
+										placeholder="Employee Id" required="required">
+								</div>
+								<div class="form-group col-md-6">
+									<label>Department</label> <input id="department"
+										name="department" value="${requirement.department}"
+										placeholder="Department" class="form-control"
+										required="required" type="text">
+								</div>
 							</div>
-							<div class="form-group col-md-6">
-								<label>Department</label> <input id="department" name="department"
-									value="${requirement.department}" placeholder="Department"
-									class="form-control" required="required" type="text">
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label>Total Positions</label> <input type="text"
+										class="form-control" name="noofPositions"
+										value="${requirement.noofPositions}"
+										placeholder="Total Positions" id="noofPositions">
+								</div>
+								<div class="form-group col-md-6">
+									<label>Technology</label> <input id="technology"
+										name="technology" value="${requirement.technology}"
+										placeholder="Technology" class="form-control" type="text"
+										required="required">
+								</div>
 							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label>Status</label> <select class="form-control"
+										name="status" value="${requirement.status}" id="status"
+										required="required">
+										<option>Select</option>
+										<option>Approved</option>
+										<option>Hold</option>
+										<option>Rejected</option>
 
-							<div class="form-group col-md-6">
-								<label>Total Positions</label> <input type="text"
-									class="form-control" name="noofPositions"
-									value="${requirement.noofPositions}"
-									placeholder="Total Positions" id="noofPositions">
+									</select>
+								</div>
+								<div class="form-group col-md-6">
+									<label>Changed By</label> <input id="approvedBy"
+										name="approvedBy" value="${requirement.approvedBy}"
+										placeholder="Approved By" class="form-control" type="text"
+										required="required">
+								</div>
 							</div>
-							<div class="form-group col-md-6">
-								<label>Technology</label> <input id="technology"
-									name="technology" value="${requirement.technology}"
-									placeholder="Technology" class="form-control" type="text"
-									required="required">
-							</div>
-							<div class="form-group col-md-6">
-								<label>Status</label> <select class="form-control" name="status"
-									value="${requirement.status}" id="status" required="required">
-									<option>Select</option>
-									<option>Approved</option>
-									<option>Hold</option>
-									<option>Rejected</option>
-
-								</select>
-							</div>
-							<div class="form-group col-md-6">
-								<label>Changed By</label> <input id="approvedBy"
-									name="approvedBy" value="${requirement.approvedBy}"
-									placeholder="Approved By" class="form-control" type="text"
-									required="required">
-							</div>
-							<div class="form-group" style="padding-left: 15px;padding-right: 15px">
+							<div class="form-group"
+								style="padding-left: 15px; padding-right: 15px">
 								<textarea id="skillset" name="skillset" cols="40" rows="5"
 									value="${skillset}" placeholder="skillset" class="form-control"></textarea>
 							</div>

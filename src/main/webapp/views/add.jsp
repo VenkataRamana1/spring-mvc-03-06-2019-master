@@ -130,14 +130,11 @@
 					</div>
 
 					<div style="float: right;">
-
 						<input type="submit" class="btn bg-orange btn-flat margin"
 							value="Add Requirement" />
 					</div>
+				</form>
 			</div>
-			</form>
-
-
 		</div>
 
 	</div>
