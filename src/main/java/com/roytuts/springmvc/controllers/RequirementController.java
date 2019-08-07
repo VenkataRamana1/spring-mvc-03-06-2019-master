@@ -199,7 +199,8 @@ public class RequirementController {
 	}
 
 	@RequestMapping(value = "/update", method = RequestMethod.POST)
-	public String updateRequirement(@RequestParam(value = "categoryId", required = true) String categoryId,
+	public String updateRequirement(
+			//@RequestParam(value = "categoryId", required = true) String categoryId,
 			@RequestParam(value = "jobCode", required = true) String jobCode,
 			@RequestParam(value = "experiencelevel", required = true) String experiencelevel,
 			@RequestParam(value = "skillset", required = true) String skillset,
@@ -218,7 +219,7 @@ public class RequirementController {
 		requirement.setTechnology(technology);
 		requirement.setNoofPositions(noofPositions);
 		requirement.setApprovedBy(approvedBy);
-		requirement.setCategoryId(categoryId);
+		//requirement.setCategoryId(categoryId);
 		requirement.setStatus(status);
 		//requirement.setUploadedby(uploadedby);
 		requirementservice.updateRequirement(requirement);

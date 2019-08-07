@@ -134,7 +134,7 @@ and also iPads specifically.
 	</c:if>
 	<div style="float: right; padding-right: 25px;">
 		<a class="btn btn-primary"
-			href="<%=request.getContextPath()%>/add/addRequirement"> Add
+			href="<%=request.getContextPath()%>/addRequirement"> Add
 			Requirement <i class="fa fa-plus" aria-hidden="true"></i>
 		</a>
 	</div>

@@ -49,7 +49,7 @@ public class RequirementDao {
 
 	public void updateRequirement(final Requirement requirement) {
 		jdbcTemplate
-				.update("update jobdetails set categoryId=?,approvedBy=?,status=?,noofPositions,, ExperienceLevel = ?, SkillSet = ?,Technology = ?, Department = ?,uploadedBy = ? where JobCode = ?",
+				.update("update jobdetails set approvedBy=?,status=?,noofPositions=?, ExperienceLevel = ?, SkillSet = ?,Technology = ?, Department = ?,uploadedBy = ? where JobCode = ?",
 						new Object[] { requirement.getExperiencelevel(), requirement.getSkillset(),
 								requirement.getTechnology(), requirement.getDepartment(), requirement.getUploadedby(),
 								requirement.getJobCode() });
