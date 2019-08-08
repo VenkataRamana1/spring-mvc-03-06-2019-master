@@ -40,7 +40,7 @@ public class RequirementDao {
 		parameters.put("jobcode", requirement.getJobCode());
 		parameters.put("department", requirement.getDepartment());
 		parameters.put("experiencelevel", requirement.getExperiencelevel());
-		parameters.put("Skillset", requirement.getSkillset());
+		parameters.put("skillSet", requirement.getSkillset());
 		parameters.put("technology", requirement.getTechnology());
 		parameters.put("categoryId", requirement.getCategoryId());
 	
@@ -49,7 +49,7 @@ public class RequirementDao {
 
 	public void updateRequirement(final Requirement requirement) {
 		jdbcTemplate
-				.update("update jobdetails set approvedBy=?,status=?,noofPositions=?, experiencelevel = ?, SkillSet = ?,technology = ?, department = ?,uploadedBy = ? where JobCode = ?",
+				.update("update jobdetails set technology = ?, experiencelevel = ?,noofPositions=?,uploadedBy = ?,department = ?,  approvedBy=?,status=?, skillSet = ? where JobCode = ?",
 						new Object[] {requirement.getStatus(),requirement.getNoofPositions(),requirement.getApprovedBy(), requirement.getExperiencelevel(), requirement.getSkillset(),
 								requirement.getTechnology(), requirement.getDepartment(), requirement.getUploadedby(),
 								requirement.getJobCode() });

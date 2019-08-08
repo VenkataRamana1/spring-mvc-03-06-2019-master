@@ -118,7 +118,6 @@
 										<option>Approved</option>
 										<option>Hold</option>
 										<option>Rejected</option>
-
 									</select>
 								</div>
 								<div class="form-group col-md-6">
@@ -131,7 +130,7 @@
 							<div class="form-group"
 								style="padding-left: 15px; padding-right: 15px">
 								<textarea id="skillset" name="skillset" cols="40" rows="5"
-									value="${skillset}" placeholder="skillset" class="form-control"></textarea>
+									value="${skillset}" placeholder="Required Skill" class="form-control" ></textarea>
 							</div>
 							<div>
 								<a class="btn btn-info btn-flat margin"
