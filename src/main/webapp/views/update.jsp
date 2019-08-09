@@ -31,10 +31,10 @@
 }
 </style>
 <html>
-<title>Genzeon Talent acquisition</title>
+<title>Edit Requirement - Genzeon</title>
 <body>
 	<jsp:include page="/views/header.jsp" />
-	<h3>Update User</h3>
+
 	<section class="content">
 		<div class="row">
 			<div class="col-md-4 py-5 text-white text-center box-header">
@@ -55,7 +55,7 @@
 
 				<div class="box box-warning">
 					<div class="box-header with-border">
-						<h3 class="box-title">Edit Category</h3>
+						<h3 class="box-title">Edit Requirement</h3>
 						<span> <a class="btn btn-info btn-flat margin"
 							href="/spring-mvc-zero-xml/requirements" style="float: right;">
 								<i class="fa fa-backward" aria-hidden="true"></i> Back to List
@@ -114,7 +114,6 @@
 									<label>Status</label> <select class="form-control"
 										name="status" value="${requirement.status}" id="status"
 										required="required">
-										<option>Select</option>
 										<option>Approved</option>
 										<option>Hold</option>
 										<option>Rejected</option>
@@ -130,7 +129,8 @@
 							<div class="form-group"
 								style="padding-left: 15px; padding-right: 15px">
 								<textarea id="skillset" name="skillset" cols="40" rows="5"
-									value="${skillset}" placeholder="Required Skill" class="form-control" ></textarea>
+									value="${skillset}" placeholder="Required Skill"
+									class="form-control" required="required"></textarea>
 							</div>
 							<div>
 								<a class="btn btn-info btn-flat margin"

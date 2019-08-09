@@ -203,7 +203,7 @@ public class RequirementController {
 			//@RequestParam(value = "categoryId", required = true) String categoryId,
 			@RequestParam(value = "jobCode", required = true) String jobCode,
 			@RequestParam(value = "experiencelevel", required = true) String experiencelevel,
-			@RequestParam(value = "skillset", required = true) String skillset,
+			@RequestParam(value = " skillset", required = true) String  skillset,
 			@RequestParam(value = "noofPositions", required = true) String noofPositions,
 			@RequestParam(value = "technology", required = true) String technology,
 			@RequestParam(value = "status", required = true) String status,
@@ -214,7 +214,7 @@ public class RequirementController {
 		Requirement requirement = new Requirement();
 		requirement.setJobCode(jobCode);
 		requirement.setExperiencelevel(experiencelevel);
-		requirement.setSkillset(skillset);
+		requirement.setSkillset( skillset);
 		requirement.setDepartment(department);
 		requirement.setTechnology(technology);
 		requirement.setNoofPositions(noofPositions);

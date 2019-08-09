@@ -44,8 +44,8 @@ public class Requirement {
 		return skillset;
 	}
 
-	public void setSkillset(String skillset) {
-		this.skillset = skillset;
+	public void setSkillset(String skillSet) {
+		this.skillset = skillSet;
 	}
 
 	public String getUploadedby() {
