@@ -58,7 +58,6 @@ public class CategoryDao {
 			e.printStackTrace();
 			return 0;
 		}
-				
 	}
 
 	public void deleteCategory(final String jobcode) {

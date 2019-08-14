@@ -128,9 +128,11 @@
 							</div>
 							<div class="form-group"
 								style="padding-left: 15px; padding-right: 15px">
-								<textarea id="skillset" name="skillset" cols="40" rows="5"
-									value="${skillset}" placeholder="Required Skill"
-									class="form-control" required="required"></textarea>
+								<textarea name="skillset" id="skillset" name="skillset"
+									cols="40" rows="5" placeholder="Required Skill"
+									class="form-control"><c:out
+										value="${requirement.skillset}" /> </textarea>
+
 							</div>
 							<div>
 								<a class="btn btn-info btn-flat margin"

@@ -192,6 +192,7 @@ public class RequirementController {
 	
 	@RequestMapping(value = "update/requirement/{jobcode}", method = RequestMethod.GET)
 	public String updatePage(@PathVariable("jobcode") String jobcode, ModelMap requirementModel) {
+		System.out.println("----------------HI---------------------");
 		requirementModel.addAttribute("jobcode", jobcode);
 		Requirement requirement = requirementservice.getRequirement(jobcode);
 		requirementModel.addAttribute("requirement", requirement);
@@ -203,7 +204,7 @@ public class RequirementController {
 			//@RequestParam(value = "categoryId", required = true) String categoryId,
 			@RequestParam(value = "jobCode", required = true) String jobCode,
 			@RequestParam(value = "experiencelevel", required = true) String experiencelevel,
-			@RequestParam(value = " skillset", required = true) String  skillset,
+			@RequestParam(value = " skillset" , required = true) String  skillset,
 			@RequestParam(value = "noofPositions", required = true) String noofPositions,
 			@RequestParam(value = "technology", required = true) String technology,
 			@RequestParam(value = "status", required = true) String status,
@@ -211,6 +212,7 @@ public class RequirementController {
 			@RequestParam(value = "department", required = true) String department,
 			//@RequestParam(value = "uploadedby", required = true) String uploadedby, 
 			ModelMap requirementModel) {
+	
 		Requirement requirement = new Requirement();
 		requirement.setJobCode(jobCode);
 		requirement.setExperiencelevel(experiencelevel);
